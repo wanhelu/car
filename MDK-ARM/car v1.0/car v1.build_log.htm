@@ -1,0 +1,119 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 2064934008@qq.com, 1, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.26.2.0
+Toolchain Path:  D:\keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.5.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+D:\cubemxproject\car v1.0\MDK-ARM\car v1.0.uvprojx
+Project File Date:  08/18/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\keil\ARM\ARMCC\Bin'
+Rebuild target 'car v1.0'
+assembling startup_stm32f103xe.s...
+compiling usart.c...
+compiling stm32f1xx_it.c...
+compiling stm32f1xx_hal_msp.c...
+compiling gpio.c...
+compiling main.c...
+../Src/main.c(56): warning:  #1295-D: Deprecated declaration MaxSpeedForward - give arg types
+  void MaxSpeedForward();
+../Src/main.c(59): warning:  #1295-D: Deprecated declaration pwmenable - give arg types
+  void pwmenable();
+../Src/main.c(62): warning:  #1295-D: Deprecated declaration tim2enable - give arg types
+  void tim2enable();
+../Src/main.c(63): warning:  #1295-D: Deprecated declaration stop - give arg types
+  void stop();
+../Src/main.c(70): warning:  #1295-D: Deprecated declaration singlelinemode1 - give arg types
+  void singlelinemode1();
+../Src/main.c(71): warning:  #1295-D: Deprecated declaration singlelinemode2 - give arg types
+  void singlelinemode2();
+../Src/main.c(75): warning:  #1295-D: Deprecated declaration starttiming - give arg types
+  void starttiming();
+../Src/main.c(76): warning:  #1295-D: Deprecated declaration gettiming - give arg types
+  int gettiming();
+../Src/main.c(211): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOB,GPIO_PIN_7,0);
+../Src/main.c(216): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOB,GPIO_PIN_7,1);
+../Src/main.c(224): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,0);
+../Src/main.c(229): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,1);
+../Src/main.c(274): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_3,1);
+../Src/main.c(276): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_3,0);
+../Src/main.c(280): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_3,1);
+../Src/main.c(299): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_0,1);
+../Src/main.c(301): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_0,0);
+../Src/main.c(449): warning:  #111-D: statement is unreachable
+  			  break;
+../Src/main.c(488): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOC,GPIO_PIN_3,0);
+../Src/main.c: 19 warnings, 0 errors
+compiling tim.c...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal_uart.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling system_stm32f1xx.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_flash.c...
+linking...
+Program Size: Code=7916 RO-data=360 RW-data=24 ZI-data=1408  
+FromELF: creating hex file...
+"car v1.0\car v1.0" - 0 Error(s), 19 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.4.0.pack
+                ARM.CMSIS.5.4.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.2
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.1.0.5.pack
+                Keil.STM32F1xx_DFP.1.0.5
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_car_v1.0
+  D:\keil\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include
+  D:\keil\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.2
+Build Time Elapsed:  00:00:15
+</pre>
+</body>
+</html>
